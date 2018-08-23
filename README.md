@@ -1,0 +1,2 @@
+# BilibiliCacheExporter
+从b站客户端缓存导出完整视频和ass弹幕的自用脚本
