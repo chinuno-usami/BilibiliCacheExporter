@@ -13,10 +13,10 @@ def get_name(path):
         title = parsed['title']
         if 'page_data' in parsed:
             page_data = parsed['page_data']
-            return title + str(page_data['page']) + page_data['part']
+            return "{}_{}_{}".format(title, str(page_data['page']), page_data['part'])
         elif 'ep' in parsed:
             ep = parsed['ep']
-            return title + str(ep['index']) + ep['index_title']
+            return "{}_{}_{}".format(title, str(ep['index']), ep['index_title'])
 
 
 def do_merge(dirname, title):
