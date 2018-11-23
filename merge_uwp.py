@@ -39,7 +39,7 @@ def trav_dirs(root):
                   for info_path in info_paths
                   if info_path == "info.json"]
     for dirname, info in list_tasks:
-        title = get_name(info, dirname)
+        title = get_name(info, dirname).replce("/", "／")
         if title:
             do_merge(dirname, title)
 

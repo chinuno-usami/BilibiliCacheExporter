@@ -24,7 +24,7 @@ def trav_dirs(root):
                   for info_path in info_paths
                   if info_path.endswith('.info')]
     for dirname, info in list_tasks:
-        title = get_name(info)
+        title = get_name(info).replace("/", "／")
         do_merge(dirname, title)
 
 if __name__ == '__main__':
